@@ -23,4 +23,12 @@
         document.getElementById('play-a-song-for-me').classList.remove('icon-play', 'icon-pause');
         document.getElementById('play-a-song-for-me').classList.add('icon-pause');
     };
+
+
+    music.onloadstart = function() {
+        document.getElementById('music-loader').classList.add('active');
+    }
+    music.canplaythrough = function() {
+        document.getElementById('music-loader').classList.remove('active');
+    }
 })();
