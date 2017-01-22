@@ -28,7 +28,7 @@
     music.onloadstart = function() {
         document.getElementById('music-loader').classList.add('active');
     }
-    music.canplaythrough = function() {
+    music.oncanplaythrough = function() {
         document.getElementById('music-loader').classList.remove('active');
     }
 })();
