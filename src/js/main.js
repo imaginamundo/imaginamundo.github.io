@@ -5,12 +5,15 @@
     var music = document.getElementById('story-music-box');
     var musicLoader = document.getElementById('music-loader');
     document.getElementById('play-a-song-for-me').addEventListener('click', function(e) {
-        musicLoader.classList.add('active');
         if (music.paused) {
             music.play();
         }
         else {
             music.pause();
+        }
+
+        if (music.readyState < 4) {
+            musicLoader.classList.add('active');
         }
     });
 
