@@ -25,10 +25,10 @@
     };
 
 
-    music.loadstart = function() {
+    music.onloadstart = function() {
         document.getElementById('music-loader').classList.add('active');
     }
-    music.onloadeddata = function() {
+    music.canplaythrough = function() {
         document.getElementById('music-loader').classList.remove('active');
     }
 })();
