@@ -6,6 +6,7 @@ var uglify   = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var htmlmin  = require('gulp-htmlmin');
 var rename   = require('gulp-rename');
+var sitemap  = require('gulp-sitemap');
  
 gulp.task('images', () =>
     gulp.src('**/*')
@@ -33,6 +34,16 @@ gulp.task('uglify', function () {
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./js'));
+});
+
+gulp.task('sitemap', function () {
+    gulp.src('*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'https://imaginamundo.github.io/'
+        }))
+        .pipe(gulp.dest(''));
 });
  
 gulp.task('watch', function () {
