@@ -264,12 +264,11 @@
     .image-mask {
         width: 200px;
         height: 200px;
-        clip-path: url(#mask);
+                clip-path: url(#mask);
+        -webkit-clip-path: url(#mask);
     }
     .svg-mask {
-        position: absolute;
-        width: 0;
-        height: 0;
+        visibility: hidden;
     }
 //
 
