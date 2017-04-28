@@ -31,6 +31,6 @@
     };
     music.addEventListener("ended", function () {
         document.getElementById('play-a-song-for-me').classList.remove('icon-play', 'icon-pause');
-        document.getElementById('play-a-song-for-me').classList.add('icon-pause');
+        document.getElementById('play-a-song-for-me').classList.add('icon-play');
     });
 })();
