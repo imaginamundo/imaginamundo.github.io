@@ -1,0 +1,150 @@
+html {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: url(background.svg) center bottom fixed no-repeat, #165093;
+    background-size: 80%;
+}
+
+a {
+    color: #F8E71C;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 6px;
+}
+
+button {
+    padding: .5em 1em;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: #165093;
+    border: 3px solid #F5A623;
+    border-radius: 6px;
+    color: #F5A623;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background: #F5A623;
+    color: #165093;
+}
+button:active {
+    transform: translateY(3px);
+}
+button:focus {
+    outline: none;
+}
+
+header,
+main,
+footer {
+    margin: auto;
+    max-width: 700px;
+}
+
+header,
+main,
+footer,
+h1,
+h2 {
+    text-align: center;
+}
+
+section {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+footer {
+    position: relative;
+    padding: 4em 0;
+    background: #FFF;
+    border-radius: 6px;
+    color: #000;
+}
+footer a {
+    display: inline-block;
+    padding: 1em;
+    color: #165093;
+}
+
+.content-block {
+    margin: auto;
+    padding: .1em 1.5em;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.about {
+    max-width: 400px;
+    background-color: #417505;
+}
+
+.career .columns + .columns {
+    margin-top: 4em;
+}
+.career__info {
+    background: #000;
+    margin-top: 1em;
+}
+
+.copy-message {
+    position: absolute;
+    top: 1em;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 6px;
+    background: #165093;
+    color: #FFF;
+
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+.copy-message.copy-message--active {
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 700px) {
+    .columns > div:nth-child(1) {
+        grid-area: column-1;
+    }
+    .columns > div:nth-child(2){
+        grid-area: column-2;
+    }
+    .columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'column-1 column-2';
+        grid-gap: 1em;
+        align-items: center;
+        text-align: left;
+    }
+    .career .columns:nth-child(even) {
+        grid-template-areas: 'column-2 column-1';
+    }
+    .career__info {
+        margin-top: 0;
+    }
+}

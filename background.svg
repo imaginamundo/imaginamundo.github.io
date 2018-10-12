@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1001 475">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="611" cy="70" r="14" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="709" cy="189" r="12" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="342" cy="34" r="10" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="408" cy="56" r="8" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="226" cy="28" r="10" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="100" cy="38" r="16" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="231" cy="142" r="14" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="324" cy="262" r="14" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="126" cy="389" r="8" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="34" cy="365" r="12" stroke="#F8E71C" stroke-width="6"/>
+    <circle cx="352" cy="429" r="23" stroke="#F8E71C" stroke-width="6"/>
+    <path stroke="#4A90E2" stroke-linecap="round" stroke-width="7" d="M8 233.892c62.003 39.232 177.262 65.587 277.876-13.487 128.242-100.789 280.416-82.546 298.157 14.894 17.742 97.44-90.164 97.44-98.637 43.471"/>
+    <path stroke="#4A90E2" stroke-linecap="round" stroke-width="7" d="M456.225 261c-58.568 4.989-66.335 99.514 13.06 122.444 79.394 22.93 144.756-51.451 213.389-51.451 68.633 0 79.627 52.742 49.52 77.743-30.108 25.001-75.586.409-62.159-31.775"/>
+    <path stroke="#F5A623" stroke-linecap="round" stroke-width="7" d="M926.794 90c-38.207 0-65.14 45.142-37.384 75.837 27.756 30.694 67.553 9.852 75.59-18.82"/>
+  </g>
+</svg>
